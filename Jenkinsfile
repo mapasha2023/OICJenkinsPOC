@@ -37,7 +37,7 @@ BEARER_TOKEN_OIC3=$( jq -r '.access_token' token_OIC2.json )
 
 
 //Importing to Gen3
-curl -X POST -v -k --insecure --location-trusted -F "file=@$BIREPORT_CS_01.00.0000.iar" -F 'type=application/octet-stream' 'https://design.integration.us-ashburn.ocp.oraclecloud.com/ic/api/integration/v1/integrations/archive?integrationInstance=TestInstance' --ssl-no-revoke --header "Authorization: $token_type$BEARER_TOKEN"
+curl -X POST -v -k --insecure --location-trusted -F "file=$BIREPORT_CS_01.00.0000.iar" -F 'type=application/octet-stream' 'https://design.integration.us-ashburn.ocp.oraclecloud.com/ic/api/integration/v1/integrations/archive?integrationInstance=TestInstance' --ssl-no-revoke --header "Authorization: $token_type$BEARER_TOKEN"
 //{Service Instance} you can find in OIC3 home paage.
 '''
 }
