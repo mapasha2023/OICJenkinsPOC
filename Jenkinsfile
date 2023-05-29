@@ -8,17 +8,6 @@ token_type = "Bearer"
 
 stages
 {
-stage ('git repo & clean')
-{
-step
-{
-bat "rmdir /s /q OICJenkinsPOC"
-bat "git clone https://github.com/mapasha2023/OICJenkinsPOC.git"
-bat "mvn clean -f OICJenkinsPOC"
-}
-}
-}
-{
 stage('GetBearerToken')
 {
 steps
