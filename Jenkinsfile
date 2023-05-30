@@ -14,7 +14,7 @@ steps
 {
 withCredentials([usernamePassword(credentialsId: "devops_user", passwordVariable: "42e68606-0f44-4a7b-b13a-99e19fc27e06", usernameVariable: "6d10ff0499544a669eec7fa44c74a06f")])
 {
-sh '''
+bat '''
 
 //Get Token for OIC Gen2
 curl --location --request POST 'https://idcs-b0bf5647dbe34af4914cf420cba0294c.identity.oraclecloud.com/oauth2/v1/token'\
@@ -32,7 +32,7 @@ stage('Deploy Integration')
 {
 steps
 {
-sh '''
+bat '''
 BEARER_TOKEN_OIC3=$( jq -r '.access_token' token_OIC2.json )
 
 
