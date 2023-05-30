@@ -12,8 +12,11 @@ stage('GetBearerToken')
 {
 steps
 {
-withCredentials([usernamePassword(credentialsId: "devops_user", passwordVariable: "42e68606-0f44-4a7b-b13a-99e19fc27e06", usernameVariable: "6d10ff0499544a669eec7fa44c74a06f")])
-{
+withCredentials([
+
+                             gitUsernamePassword(credentialsId: 'devops_user', gitToolName: 'Default')
+
+                        ]){
 sh '''
 
 //Get Token for OIC Gen2
