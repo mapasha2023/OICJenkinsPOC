@@ -7,7 +7,7 @@ token_type = "Bearer"
 }
 stages
 {
-stage('GetBearerToken')
+stage ('Generate OIC Token')
 {
 steps
 sh '''
@@ -21,7 +21,6 @@ curl --location --request POST 'https://idcs-b0bf5647dbe34af4914cf420cba0294c.id
 --data-urlencode 'client_secret=42e68606-0f44-4a7b-b13a-99e19fc27e06' --insecure -o token_OIC2.json
 '''
 }
-}
 stage('Deploy Integration')
 {
 steps
@@ -32,6 +31,7 @@ BEARER_TOKEN_OIC3=$( jq -r '.access_token' token_OIC2.json )
 curl -X POST -v -k --insecure --location-trusted -F "file=@$BIREPORT_CS_01.00.0000.iar" -F 'type=application/octet-stream' 'https://design.integration.us-ashburn.ocp.oraclecloud.com/ic/api/integration/v1/integrations/archive?integrationInstance=TestInstance' --ssl-no-revoke --header "Authorization: $token_type$BEARER_TOKEN"
 //{Service Instance} you can find in OIC3 home paage.
 '''
+}
 }
 }
 }
