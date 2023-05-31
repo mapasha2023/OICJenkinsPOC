@@ -48,5 +48,13 @@
 			"propertyValue": "CoPApril#2023",
 			"requiredFlag": true
 		}
-	]
+	],
+	"displayName": "SFTP Connection",
+	"hasAttachment": false,
+	"hiddenFlag": false,
+	"propertyGroup": "CONNECTION_PROPS",
+	"propertyName": "UseSftp",
+	"propertyType": "CHOICE",
+	"propertyValue": "true",
+	"requiredFlag": false
 }
