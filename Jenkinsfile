@@ -1,10 +1,6 @@
 pipeline
 {
 agent any
-// environment
-// {
-// token_type = "Bearer"
-// }
 stages
 {
 stage('Generate Token')
