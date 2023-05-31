@@ -1,0 +1,19 @@
+{
+    "columns": [
+        "Name",
+        "PathOfFile",
+        "UserID",
+        "Password"
+    ],
+    "rows": [
+        {
+            "rowData": [
+                "Report",
+                "/Custom/TEST/GetItem_Info.xdm",
+                "testUser",
+                "tesT@123%"
+            ]
+        }
+    ],
+    "name": "BIReport_CS"
+}
