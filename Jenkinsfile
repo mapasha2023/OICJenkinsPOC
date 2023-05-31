@@ -7,8 +7,7 @@ agent any
 // }
 stages
 {
-{
-stage
+stage('Generate Token')
 {
 steps
 {
