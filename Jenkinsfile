@@ -7,6 +7,9 @@ agent any
 // }
 stages
 {
+{
+stage
+{
 steps
 {
 bat '''
@@ -18,6 +21,7 @@ curl -s "https://idcs-b0bf5647dbe34af4914cf420cba0294c.identity.oraclecloud.com/
 --data-urlencode "client_id=6d10ff0499544a669eec7fa44c74a06f" \
 --data-urlencode 'client_secret=42e68606-0f44-4a7b-b13a-99e19fc27e06' --insecure -o token_OIC3.json
 '''
+}
 }
 stage('Deployment') 
 {
