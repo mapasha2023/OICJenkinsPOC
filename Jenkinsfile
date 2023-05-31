@@ -32,7 +32,7 @@ stage('Activate the Integration')
 steps
 {
 bat '''
-curl --header "Authorization: Basic cG9jdXNlcjpIVk9JQ01heSMyMDIz" --header "Content-Type:application/json" --header "X-HTTP-Method-Override:PATCH" -d @update.json curl --location "https://testinstance-idevjxz332qf-ia.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/BIREPORT_CS|01.00.0000
+curl --header "Authorization: Basic cG9jdXNlcjpIVk9JQ01heSMyMDIz" --header "Content-Type:application/json" --header "X-HTTP-Method-Override:PATCH" -d @update.json curl --location "https://testinstance-idevjxz332qf-ia.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/BIREPORT_CS|01.00.0000"
 '''
 }
 }
