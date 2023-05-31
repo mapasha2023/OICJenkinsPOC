@@ -11,7 +11,7 @@ stage('GetBearerToken')
 {
 steps
 {
-sh '''
+bat '''
 curl -s "https://idcs-b0bf5647dbe34af4914cf420cba0294c.identity.oraclecloud.com/oauth2/v1/token" \
 --header "Authorization: Basic NmQxMGZmMDQ5OTU0NGE2NjllZWM3ZmE0NGM3NGEwNmY6NDJlNjg2MDYtMGY0NC00YTdiLWIxM2EtOTllMTlmYzI3ZTA2" \
 --header "Content-Type: application/x-www-form-urlencoded" \
