@@ -22,5 +22,12 @@ curl -s "https://idcs-b0bf5647dbe34af4914cf420cba0294c.identity.oraclecloud.com/
 '''
 }
 }
+stage ('Deploy OIC jar File')
+{
+steps
+{
+curl --location "https://testinstance-idevjxz332qf-ia.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/archive" --header "Authorization: Basic cG9jdXNlcjpIVk9JQ01heSMyMDIz" --form "file=@"BIREPORT_CS_01.00.0000.iar"
+}
+}
 }
 }
