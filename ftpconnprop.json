@@ -1,0 +1,52 @@
+{
+	"connectionProperties": [
+		{
+			"displayName": "FTP Server Host Address",
+			"hasAttachment": false,
+			"hiddenFlag": false,
+			"propertyDescription": "Enter the publicly accessible FTP Server Host Address. For example, server123.oracle.com",
+			"propertyGroup": "CONNECTION_PROPS",
+			"propertyName": "Host",
+			"propertyShortDesc": "FTP Server Host Address. For example, server123.oracle.com",
+			"propertyType": "STRING",
+			"propertyValue": "138.1.50.247",
+			"requiredFlag": true
+		},
+		{
+			"displayName": "FTP Server Port",
+			"hasAttachment": false,
+			"hiddenFlag": false,
+			"propertyDescription": "Enter the FTP Server Port. For example, 21 for FTP and 990 for Implicit FTP SSL",
+			"propertyGroup": "CONNECTION_PROPS",
+			"propertyName": "Port",
+			"propertyShortDesc": "FTP Server Port. For example, 21 for FTP and 990 for Implicit FTP SSL",
+			"propertyType": "NUMBER",
+			"propertyValue": "5008",
+			"requiredFlag": true
+		}
+	],
+	"securityProperties": [
+		{
+			"displayName": "User Name",
+			"hasAttachment": false,
+			"hiddenFlag": false,
+			"propertyGroup": "CREDENTIALS",
+			"propertyName": "username",
+			"propertyShortDesc": "Enter User Name",
+			"propertyType": "STRING",
+			"propertyValue": "copuser",
+			"requiredFlag": true
+		},
+		{
+			"displayName": "Password",
+			"hasAttachment": false,
+			"hiddenFlag": false,
+			"propertyGroup": "CREDENTIALS",
+			"propertyName": "password",
+			"propertyShortDesc": "Enter Password",
+			"propertyType": "PASSWORD",
+			"propertyValue": "CoPApril#2023",
+			"requiredFlag": true
+		}
+	]
+}
